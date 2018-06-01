@@ -9,163 +9,168 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
-  <div class="container-fluid">
-
-
-  <h3>Questions</h3>
-<form id="quiz">
-
-<label for="name">Enter your name</label>
-<input type="text" id="name">
-
-<br>
-<br>
-<div class="well">
-  <img src="img/team.jpg" alt="" class="right">
-  <h4>When working with a team on a project, where do you like to be?</h4>
-  <ul>
-    <li><label>
-      <input type="radio" name="teamChoice" value="1">
-      I want to lead the group!  It upsets me if my voice isnt heard.
-    </label></li>
-    <li><label>
-      <input type="radio" name="teamChoice" value="3">
-      I want to be where I am needed most.  The most important thing is to get the job done!
-    </label></li>
-    <li><label>
-      <input type="radio" name="teamChoice" value="2">
-      I am most comfortable if I am told where to work and stick with it until it's done.
-    </label></li>
-  </ul>
-</div>
-<div class="well">
-  <img src="img/boss.jpg" alt="" class="right">
-  <h4>How do you prefer to interact with your boss/employer?</h4>
-
-  <ul>
-    <li><label>
-      <input type="radio" name="bossChoice" value="3">
-      I like to send an email and forget about it.
-    </label></li>
-    <li><label>
-      <input type="radio" name="bossChoice" value="1">
-      It makes me happy to have a boss that has time for me to drop by and talk.
-    </label></li>
-    <li><label>
-      <input type="radio" name="bossChoice" value="2">
-      It is up to my employer to decide how we communicate.
-    </label></li>
-  </ul>
-</div>
-<div class="well">
-  <img src="img/life.jpg" alt="" class="right">
-  <h4>Which of the following do you value most in your work life?</h4>
-
-  <ul>
-    <li><label>
-      <input type="radio" name="lifeChoice" value="3">
-      I want a steady income with scheduled preformance reviews.
-    </label></li>
-    <li><label>
-      <input type="radio" name="lifeChoice" value="1">
-      I want a friendly work community where I can work with people I consider friends.
-    </label></li>
-    <li><label>
-      <input type="radio" name="lifeChoice" value="2">
-      I just want a job!
-    </label></li>
-  </ul>
-</div>
-<div class="well">
-  <img src="img/room.jpg" alt="" class="right">
-  <h4>If you were asked to draw a layout of your room, how would you do it?</h4>
-
-  <ul>
-    <li><label>
-      <input type="radio" name="roomChoice" value="1">
-      I would draw a quick sketch.  It's my room, i know what it looks like.
-    </label></li>
-    <li><label>
-      <input type="radio" name="roomChoice" value="3">
-      I would use an image design application to make sure it was somewhat accurate.
-    </label></li>
-    <li><label>
-      <input type="radio" name="roomChoice" value="2">
-      I could probably describe it without having to draw it.
-    </label></li>
-  </ul>
-</div>
-<div class="well">
-  <img src="img/city.jpg" alt="" class="right">
-  <h4>What is your preferred way to move about the city?</h4>
-
-  <ul>
-    <li><label>
-      <input type="radio" name="cityChoice" value="2">
-      I want to drive.  I can't afford to wait around for the bus.
-    </label></li>
-    <li><label>
-      <input type="radio" name="cityChoice" value="3">
-      I like the bus.  I can sit and focus on something else while I travel.
-    </label></li>
-    <li><label>
-      <input type="radio" name="cityChoice" value="1">
-      I take a bike when I can.  It is important to think of your impact on society.
-    </label></li>
-  </ul>
-</div>
-
-  <button type="submit" class="btn">Submit</button>
-</form>
-
-<div id="csharpShow">
-  <div class="row">
-    <div class="col-md-6">
-      <h1>You are a business savy tycoon!</h1>
-      <img src="img/csharppic.jpg" alt="" class="result">
+  <div class="container">
+    <div class="jumbotron">
+      <h1> Epicodus Track Suggester</h1>
+      <footer>Don't know where to start? We can help!</footer>
     </div>
-    <div class="col-md-6">
-<p class="endtext"><span class="name"></span>, you should study C#!</p>
-  <br>
-    <p class="endtext">Students who learn C# programming and combine it with their knowledge of the .NET
-  framework can target larger enterprises, government agencies, and companies serving enterprise and government
-  clients for employment.</p>
-</div>
-</div>
-</div>
-<div id="rrShow">
-  <div class="row">
-    <div class="col-md-6">
-      <h1>You are a star on the rise!</h1>
-      <img src="img/rrpic.jpg" alt="" class="result">
-    </div>
-    <div class="col-md-6">
-<p class="endtext"><span class="name"></span>, you should take our Ruby/Rails course!</p>
-  <br>
-    <p class="endtext">Ruby and Rails are typically used by younger companies and startups,
-   especially for building interactive web applications. Companies using Ruby and Rails who have hired Epicodus
-   graduates include New Relic, LivingSocial, and SpendWell.</p>
-</div>
-</div>
-</div>
-<div id="cssShow">
-  <div class="row">
-    <div class="col-md-6">
-      <h1>You are a creative maverick!</h1>
-      <img src="img/csspic.jpg" alt="" class="result">
-    </div>
-    <div class="col-md-6">
+    <br>
+    <h3>Let's answer a few questions and see where you might fit in.</h3>
+    <br>
+    <form id="quiz">
+
+      <label for="name">Enter your name</label>
+      <input type="text" id="name">
+
       <br>
       <br>
-<p class="endtext"><span class="name"></span>, you should study CSS!</p>
-<br>
-  <p class="endtext">Students who learn CSS will be able to style web pages using complex, responsive layouts,
-   while gaining exposure to the latest CSS tools, tricks, and features used every day by front-end developers and
-   designers.</p>
-</div>
-</div>
-</div>
+      <div class="well">
+        <img src="img/team.jpg" alt="" class="right">
+        <h4>When working with a team on a project, where do you like to be?</h4>
+        <ul>
+          <li><label>
+            <input type="radio" name="teamChoice" value="1">
+            I want to lead the group!  It upsets me if my voice isnt heard.
+          </label></li>
+          <li><label>
+            <input type="radio" name="teamChoice" value="3">
+            I want to be where I am needed most.  The most important thing is to get the job done!
+          </label></li>
+          <li><label>
+            <input type="radio" name="teamChoice" value="2">
+            I am most comfortable if I am told where to work and stick with it until it's done.
+          </label></li>
+        </ul>
+      </div>
+      <div class="well">
+        <img src="img/boss.jpg" alt="" class="right">
+        <h4>How do you prefer to interact with your boss/employer?</h4>
 
-</div>
-</body>
-</html>
+        <ul>
+          <li><label>
+            <input type="radio" name="bossChoice" value="3">
+            I like to send an email and forget about it.
+          </label></li>
+          <li><label>
+            <input type="radio" name="bossChoice" value="1">
+            It makes me happy to have a boss that has time for me to drop by and talk.
+          </label></li>
+          <li><label>
+            <input type="radio" name="bossChoice" value="2">
+            It is up to my employer to decide how we communicate.
+          </label></li>
+        </ul>
+      </div>
+      <div class="well">
+        <img src="img/life.jpg" alt="" class="right">
+        <h4>Which of the following do you value most in your work life?</h4>
+
+        <ul>
+          <li><label>
+            <input type="radio" name="lifeChoice" value="3">
+            I want a steady income with scheduled preformance reviews.
+          </label></li>
+          <li><label>
+            <input type="radio" name="lifeChoice" value="1">
+            I want a friendly work community where I can work with people I consider friends.
+          </label></li>
+          <li><label>
+            <input type="radio" name="lifeChoice" value="2">
+            I just want a job!
+          </label></li>
+        </ul>
+      </div>
+      <div class="well">
+        <img src="img/room.jpg" alt="" class="right">
+        <h4>If you were asked to draw a layout of your room, how would you do it?</h4>
+
+        <ul>
+          <li><label>
+            <input type="radio" name="roomChoice" value="1">
+            I would draw a quick sketch.  It's my room, i know what it looks like.
+          </label></li>
+          <li><label>
+            <input type="radio" name="roomChoice" value="3">
+            I would use an image design application to make sure it was somewhat accurate.
+          </label></li>
+          <li><label>
+            <input type="radio" name="roomChoice" value="2">
+            I could probably describe it without having to draw it.
+          </label></li>
+        </ul>
+      </div>
+      <div class="well">
+        <img src="img/city.jpg" alt="" class="right">
+        <h4>What is your preferred way to move about the city?</h4>
+
+        <ul>
+          <li><label>
+            <input type="radio" name="cityChoice" value="2">
+            I want to drive.  I can't afford to wait around for the bus.
+          </label></li>
+          <li><label>
+            <input type="radio" name="cityChoice" value="3">
+            I like the bus.  I can sit and focus on something else while I travel.
+          </label></li>
+          <li><label>
+            <input type="radio" name="cityChoice" value="1">
+            I take a bike when I can.  It is important to think of your impact on society.
+          </label></li>
+        </ul>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <div id="csharpShow">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>You are a business savy tycoon!</h1>
+          <img src="img/csharppic.jpg" alt="" class="result">
+        </div>
+        <div class="col-md-6">
+
+          <p class="endtext"><span class="name"></span>, you should study C#!</p>
+
+          <p class="endtext">Students who learn C# programming and combine it with their knowledge of the .NET
+            framework can target larger enterprises, government agencies, and companies serving enterprise and government
+            clients for employment.</p>
+          </div>
+        </div>
+      </div>
+      <div id="rrShow">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>You are a star on the rise!</h1>
+            <img src="img/rrpic.jpg" alt="" class="result">
+          </div>
+          <div class="col-md-6">
+
+            <p class="endtext"><span class="name"></span>, you should take our Ruby/Rails course!</p>
+
+            <p class="endtext">Ruby and Rails are typically used by younger companies and startups,
+              especially for building interactive web applications. Companies using Ruby and Rails who have hired Epicodus
+              graduates include New Relic, LivingSocial, and SpendWell.</p>
+            </div>
+          </div>
+        </div>
+        <div id="cssShow">
+          <div class="row">
+            <div class="col-md-6">
+              <h1>You are a creative maverick!</h1>
+              <img src="img/csspic.jpg" alt="" class="result">
+            </div>
+            <div class="col-md-6">
+
+              <p class="endtext"><span class="name"></span>, you should study CSS!</p>
+
+              <p class="endtext">Students who learn CSS will be able to style web pages using complex, responsive layouts,
+                while gaining exposure to the latest CSS tools, tricks, and features used every day by front-end developers and
+                designers.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </body>
+      </html>
