@@ -14,8 +14,32 @@
   display: none;
 }
 
-img {
+.right {
   float: right;
   width: 200px;
   height: 130px;
+}
+
+.result {
+  width: 550px;
+}
+
+h1 {
+font-weight: bold;
+text-decoration: underline;
+text-align: center;
+}
+
+.well {
+  width: 1200px;
+}
+
+.row {
+  width: 1200px;
+}
+
+.endtext {
+  font-size: 20px;
+  font-weight: bold;
+
 }
