@@ -1,6 +1,5 @@
 $(document).ready(function(){
   $("#quiz").submit(function(event){
-    debugger
     var team = parseInt($("input:radio[name=teamChoice]:checked").val());
     var boss = parseInt($("input:radio[name=bossChoice]:checked").val());
     var life = parseInt($("input:radio[name=lifeChoice]:checked").val());
@@ -15,6 +14,9 @@ $(document).ready(function(){
     } else {
       $("#csharpShow").show()
     }
+
+  var nameInput = $("input#name").val();
+  $(".name").text(nameInput);
 
     event.preventDefault();
   });
