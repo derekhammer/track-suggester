@@ -13,3 +13,9 @@
 #cssShow {
   display: none;
 }
+
+img {
+  float: right;
+  width: 200px;
+  height: 130px;
+}
